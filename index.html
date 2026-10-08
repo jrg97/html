@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro Pessoal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Cadastro Pessoal</h1>
+        <div class="area foto">
+        <img id="previewFoto" src="" alt="Foto do aluno" class="foto">
+        </div>
+        <label for="foto">Escolha sua foto:</label>
+        <input type="file" id="foto" accept="image/*">
+        <form id="formulario">
+        <label for="nome">Nome</label>
+        <input type="text" id="nome" required>
+        <label for="endereco">Endereço</label>
+        <input type="text" id="endereco" required>
+        <label for="telefone">Telefone</label>
+        <input type="tel" id="telefone" placeholder="(11) 99999-9999" required>
+        <label for="email">E-mail</label>
+        <input type="email" id="email" required>
+        <label for="nacionalidade">Nacionalidade</label>
+        <input type="text" id="nacionalidade" required>
+        <label for="naturalidade">Naturalidade</label>
+        <input type="text" id="naturalidade" placeholder="Cidade - Estado" required>
+        <button type="submit">Cadastrar</button>
+        <button type="button" onclick="limparFormulario()">Limpar</button>
+        </form>
+        <p id="mensagem"></p>
+        <h2>Cadastros Realizados</h2>
+        <div id="listaCadastros"></div>
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+    </div>
+</body>
+</html>
