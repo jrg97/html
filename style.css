@@ -13,6 +13,7 @@ body{
     background-color: white;
     padding: 30px;
     border-radius: 15px;
+    box-shadow: 0 0 15px #999;
 }
 h1, h2{
     text-align: center;
@@ -34,9 +35,6 @@ h1, h2{
 .foto:hover{
     transform: scale(1.1);
 }
-form{
-    text-align: left;
-}
 label{
     display: block;
     margin-top: 15px;
@@ -50,18 +48,14 @@ input{
     border-radius: 5px;
     font-size: 16px;
 }
-input:focus{
-    border: 2px solid #333;
-    outline: none;
-}
 input[type="file"]{
-    border: nome;
+    border: none;
 }
 button{
     padding: 12px 20px;
-    margin-top:20px;
+    margin-top: 20px;
     margin-right: 5px;
-    border:none;
+    border: none;
     border-radius: 5px;
     background-color: #333;
     color: white;
@@ -73,8 +67,8 @@ button:hover{
 }
 #mensagem{
     text-align: center;
-    margin-top: 20px;
     font-weight: bold;
+    margin-top: 20px;
 }
 .cadastro{
     background-color: #f5f5f5;
